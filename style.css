@@ -897,3 +897,288 @@ hr{
         font-size: 12px;
     }
 }
+
+
+/* ----------------------HOUSE DETAILS PAGE----------------------- */
+
+
+.house-details{
+    padding: 0 12%;
+}
+
+.house-title{
+    margin-top: 50px;
+}
+
+.house-title h1{
+    font-weight: 600;
+}
+
+.house-title .row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.house-title span{
+    margin: 0 20px;
+}
+
+.house-title i{
+    color: orange;
+    font-size: 18px;
+}
+
+.gallery{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+    'a a b e' 
+    'a a c e'
+    'a a d e';
+    margin: 20px 0;
+}
+
+.gallery div img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.gallery-img-1{
+    grid-area: a;
+    cursor: pointer;
+}
+div.gallery > div:nth-child(2){
+    grid-area: b;
+    cursor: pointer;
+}
+div.gallery > div:nth-child(3){
+    grid-area: c;
+    cursor: pointer;
+}
+div.gallery > div:nth-child(4){
+    grid-area: d;
+    cursor: pointer;
+}
+.card-long{
+    grid-area: e;
+    cursor: pointer;
+}
+
+.extra-details h2{
+    font-weight: 500;
+}
+
+.extra-details h4{
+    text-align: right;
+    font-size: 22px;
+}
+
+.line{
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    width: auto;
+    max-width: 800px;
+    margin: 20px 0 50px;
+}
+
+.check-form{
+    margin: 30px 0;
+    background-color: white;
+    box-shadow: 0 0 30px #3333331a;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.check-form label{
+    display: block;
+}
+
+.check-form div{
+    padding: 20px;
+}
+
+.check-form input{
+    background: transparent;
+    border: none;
+}
+
+.check-form button{
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--text-colour-light);
+    padding: 18px;
+    width: 350px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 200ms ease;
+}
+
+.check-form button:hover{
+   background-color: white;
+   border: 1px solid var(--primary-color);
+   color: var(--primary-color);
+   transition: all 200ms ease;
+}
+
+.guest-field{
+    flex: 1;
+}
+
+.details-list{
+    list-style: none;
+    margin: 50px 0;
+}
+
+.details-list li{
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: var(--text-colour-dark);
+    position: relative;
+}
+
+.details-list li span{
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--mute-text-dark);
+}
+
+.details-list li i{
+    position: absolute;
+    top: 5px;
+    left: -40px;
+    color: rgba(41, 235, 41, 0.795);
+}
+
+.map{
+    margin: 50px 0;
+}
+
+.map iframe{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.map h3{
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.host-info{
+    display: flex;
+    align-items: center;
+}
+
+.host-info img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 30px;
+    object-fit: cover;
+}
+
+.host-info h2{
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.host-info i{
+    color: orange;
+}
+
+.host-contact{
+    display: inline-block;
+    margin: 40px 0 40px 120px;
+    color: var(--text-colour-light);
+    padding: 15px 50px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    transition: all 200ms ease;
+}
+
+.host-contact:hover{
+    background-color: white;
+    color: var(--primary-color);
+    transition: all 200ms ease;
+}
+
+
+
+/* --------------------MEDIA QUERY FOR MOBILE PHONES--------------------------- */
+
+
+
+
+@media (max-width: 700px){
+    .house-details{
+        margin-top: 120px;
+    }
+    
+    .row p{
+        margin-top: 10px;
+    }
+
+    .gallery{
+        grid-template-areas: 
+        'a a'
+        'b e'
+        'c e'
+        'd e';
+    }
+     
+    .extra-details h2{
+        font-size: 20px;
+    }
+
+    .extra-details h4{
+        text-align: left;
+        margin: 10px 0;
+        font-size: 18ox;
+    }
+
+    .check-form{
+        padding: 10px 30px;
+    }
+
+    .check-form div{
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    .check-form input{
+        border-bottom: 1px solid #ccc;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .check-form button{
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    .host-info{
+        display: block;
+        line-height: 28px;
+    }
+
+    .host-info span{
+        font-size: 15px;
+    }
+
+    .host-contact{
+        margin: 40px 0;
+    }
+}
