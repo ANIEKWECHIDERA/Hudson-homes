@@ -8,8 +8,6 @@
     --primary-color: rgb(207, 76, 109);
 }
 
-
-
 *{
     padding: 0;
     margin: 0;
@@ -78,6 +76,10 @@ nav .bi-list{
 }
 
 .nav-links li a:hover{
+    color: var(--primary-color);
+}
+
+.nav-links .active{
     color: var(--primary-color);
 }
 
